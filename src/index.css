@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #23d3f6c6;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #83c69c;
+}
+
+th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #007bff;
+    color: white;
+}
+
+button.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+button.btn-success {
+    margin-right: auto;
+    background-color: #38a955;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.board-actions {
+    display: flex;
+    align-items: center;
+}
+
+.board-actions .btn {
+    margin-right: 10px; 
+    
+}
+.subtask-list {
+    display: none;
+    list-style-type: disc;
+    padding-left: 20px;
+    background-color: #a09898;
+    border: 1px solid #e99c9c;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtask-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.subtask-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.subtask-item .line-through {
+    text-decoration: line-through;
+}
+
+.subtask-list.show {
+    display: block;
+}
